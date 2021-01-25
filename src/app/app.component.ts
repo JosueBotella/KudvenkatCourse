@@ -4,9 +4,7 @@ import { Component, VERSION } from "@angular/core";
   selector: "my-app",
   //templateUrl: './app.component.html',
   template: `
-    <h1>Working with {{ name }}</h1>
-    <input (onkeypress)="showName()" />
-    <span></span>
+    <app-employee-list></app-employee-list>
   `,
   styleUrls: ["./app.component.css"]
 })
@@ -16,8 +14,7 @@ export class AppComponent {
   showName(): void {}
 }
 
-interface Curso{
-  id:number;
-  nombre:string;
-  
+interface Curso {
+  id: number;
+  nombre: string;
 }
