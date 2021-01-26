@@ -4,7 +4,7 @@ import { FormsModule } from "@angular/forms";
 
 import { AppComponent } from "./app.component";
 import { EmployeeListComponent } from "./employee-list/employee-list.component";
-import { EmployeeTitlePipe } from "./employee/employeeTitle.pipe";
+import { employeeTitle } from "./employee-list/employeeTitle.pipe";
 import { EmployeeCountComponent } from "./employee-list/employeeCount.component";
 
 @NgModule({
@@ -12,7 +12,7 @@ import { EmployeeCountComponent } from "./employee-list/employeeCount.component"
   declarations: [
     AppComponent,
     EmployeeListComponent,
-    EmployeeTitlePipe,
+    employeeTitle,
     EmployeeCountComponent
   ],
   bootstrap: [AppComponent]
